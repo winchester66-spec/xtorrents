@@ -1,0 +1,25 @@
+# Migração para domínio próprio — xtorrents.com.br
+
+Novo domínio:
+https://xtorrents.com.br/
+
+Arquivos neste pacote:
+- index.html com canonical/OG/SEO apontando para o novo domínio
+- sitemap.xml com 5684 URLs no novo domínio
+- robots.txt apontando para o sitemap novo
+- .htaccess forçando HTTPS e domínio xtorrents.com.br
+- config-novo-dominio-exemplo.php para criar novo config.php após gerar novo link encurtado
+
+Atenção ao encurtador:
+O link encurtado antigo provavelmente aponta para o domínio antigo.
+Crie um novo link no encurtador com destino:
+https://xtorrents.com.br/download.php
+
+Depois atualize config.php com o novo link.
+
+Google Search Console:
+1. Adicione propriedade para https://xtorrents.com.br/
+2. Envie sitemap.xml
+3. Inspecione a URL inicial e solicite indexação.
+
+Se o domínio antigo ainda existir, mantenha o .htaccess para redirecionar qualquer acesso para o novo domínio.

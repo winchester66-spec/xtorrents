@@ -1,0 +1,20 @@
+# Patch de descrições completas — x-torrents
+
+Foram importadas descrições do rascunho:
+https://sage-semolina-16fcfe.netlify.app/
+
+Resultado:
+- Títulos no catálogo: 5683
+- Descrições correspondidas diretamente/fallback: 5679
+- Arquivos principais: index.html, movies.php, filme.php
+
+O que subir:
+1. Envie `index.html`, `movies.php` e `filme.php` para a raiz do public_html, substituindo os atuais.
+2. Não substitua `links.php`, `start.php`, `iniciar.php`, `download.php` ou `config.php` se já estão funcionando.
+3. Se ainda houver textos quebrados com Ã©/Ã¡, copie a linha `AddDefaultCharset UTF-8` do arquivo htaccess_sugerido.txt para seu `.htaccess`.
+
+Depois teste:
+https://xtorrents.com.br/filme/ghost-in-the-cell/
+
+A página deve mostrar a descrição real:
+"Ghost in the Cell Torrent Dual Áudio Download – Uma prisão notória..."

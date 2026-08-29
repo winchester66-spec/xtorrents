@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /start.php
+Disallow: /iniciar.php
+Disallow: /download.php
+Sitemap: https://xtorrent.produtodigital.org/sitemap.xml

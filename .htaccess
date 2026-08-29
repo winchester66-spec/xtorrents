@@ -1,0 +1,33 @@
+Options -Indexes
+DirectoryIndex index.html index.php
+
+<Files "links.php">
+  Require all denied
+</Files>
+<Files "config.php">
+  Require all denied
+</Files>
+<Files "movies.php">
+  Require all denied
+</Files>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  RewriteCond %{HTTP_HOST} !^xtorrents\.com\.br$ [NC]
+  RewriteRule ^ https://xtorrents.com.br%{REQUEST_URI} [L,R=301]
+
+  RewriteRule ^filme/([A-Za-z0-9-]+)/?$ filme.php?slug=$1 [L,QSA]
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript application/javascript application/json application/xml image/svg+xml
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

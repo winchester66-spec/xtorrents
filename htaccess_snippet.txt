@@ -1,0 +1,4 @@
+# Adicione estas linhas ao seu .htaccess para proteger links.php:
+<Files "links.php">
+  Require all denied
+</Files>

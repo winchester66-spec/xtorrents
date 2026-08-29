@@ -1,0 +1,22 @@
+# Pacote de capas locais — x-torrents
+
+Foram geradas 5683 capas locais em WebP na pasta /capas/.
+
+Arquivos principais:
+- capas/ → todas as capas em WebP
+- index.html → catálogo atualizado para usar /capas/slug.webp
+- movies.php → dados das páginas individuais com capas locais
+- filme.php → se incluído, usa o movies.php atualizado
+- htaccess_cache_webp.txt → trecho opcional de cache para .htaccess
+
+Como subir:
+1. Envie a pasta `capas` inteira para a raiz public_html.
+2. Substitua `index.html` e `movies.php`.
+3. Se `filme.php` estiver no pacote, substitua também.
+4. Não mexa em links.php, start.php, iniciar.php, download.php e config.php se o download já está funcionando.
+
+Teste depois:
+https://xtorrents.com.br/capas/ghost-in-the-cell.webp
+https://xtorrents.com.br/filme/ghost-in-the-cell/
+
+Observação: algumas capas que falharam no download recebem placeholder. Veja falhas_capas.json.

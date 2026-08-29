@@ -1,0 +1,5 @@
+Arquivos para melhorar o snippet SEO e favicon do x-torrent.
+
+Envie todos para a raiz public_html, substituindo index.html e favicons antigos.
+Depois, no Google Search Console, use Inspeção de URL na página inicial e clique em Solicitar indexação.
+O Google pode levar dias ou semanas para atualizar título, descrição e favicon nos resultados.
