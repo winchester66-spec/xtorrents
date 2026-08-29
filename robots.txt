@@ -1,3 +1,3 @@
 User-agent: *
-Allow: /
-Sitemap: https://grand-gingersnap-c926b6.netlify.app/sitemap.xml
+Allow: /xtorrents/
+Sitemap: https://winchester66-spec.github.io/xtorrents/sitemap.xml
